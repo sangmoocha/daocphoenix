@@ -1,24 +1,9 @@
-# daocphoenix
-
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 프로그램 설치  [2020-12-28]
+- Vue (TypeScript), Vuetify 설치
+- Vuetify ERROR 수정
+    - @/plugins/vuetify.ts
+    ```
+        //import Vuetify from "vuetify/lib/framework";
+        // framework 존재하지 않음. 아래와 같이 수정 
+        import Vuetify from "vuetify/lib";
+    ```
