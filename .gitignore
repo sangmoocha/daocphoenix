@@ -21,3 +21,10 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+# Firebase directories and files
+.firebaserc
+
+
+# Github directories and files
+.Github

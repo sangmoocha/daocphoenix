@@ -3,12 +3,21 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
-      <v-btn>aaaa</v-btn>
+      <v-btn @click="test()">aaaa</v-btn>
     </div>
     <router-view />
   </div>
 </template>
+<script lang="ts">
+import { Component, Vue } from "vue-property-decorator";
 
+@Component
+export default class App extends Vue {
+  test() {
+    console.log(this.$firebase);
+  }
+}
+</script>
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
