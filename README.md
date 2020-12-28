@@ -22,15 +22,22 @@
   - 예를 들어, instance property인 $myProperty를 string 타입으로 선언하고자 하는 경우:
     ```
       // 1. 'vue'를 보충된 타입 선언 전에 import해야 합니다.
-      import Vue from 'vue'
+      import Vue from 'vue';
+      // firebase
+      import firebae from 'firebase/app';
 
       // 2. 보충하고자 하는 타입이 있는 파일을 지정하세요.
       //    Vue의 constructor type은 types/vue.d.ts에 있습니다.
       declare module 'vue/types/vue' {
         // 3. Vue에 보강할 내용을 선언하세요.
         interface Vue {
-          $myProperty: string
+          $firebase: typeof firebase;
         }
       }
     ```
-    위의 코드를 선언 파일 형태로 (my-property.d.ts 처럼) include하면, `$myProperty`를 Vue 인스턴스 내에서 사용할 수 있습니다.
+  >  위의 코드를 선언 파일 형태로 (my-property.d.ts 처럼) include하면, `$myProperty`를 Vue 인스턴스 내에서 사용할 수 있습니다.
+
+## [메일 링크 인증 하기](https://firebase.google.com/docs/auth/web/email-link-auth?authuser=0)  [2020-12-29]
+  - views와 components의 차이
+    > router에서 보여주는 component 파일은 views 폴더에 넣는다. 그 외에는 components 폴더이다.
+  
